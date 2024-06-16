@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selamat Ulang Tahun</title>
+    <title>Halaman Utama</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -13,7 +13,6 @@
             height: 100vh;
             margin: 0;
             background-color: #f8f9fa;
-            color: #333;
             animation: backgroundAnimation 10s infinite alternate;
         }
         @keyframes backgroundAnimation {
@@ -21,77 +20,24 @@
             50% { background-color: #ffe6e6; }
             100% { background-color: #f8f9fa; }
         }
-        .container {
-            text-align: center;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            animation: fadeIn 2s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .container h1 {
-            font-size: 2.5em;
-            color: #ff6b6b;
-            animation: scaleIn 1s ease-out;
-        }
-        @keyframes scaleIn {
-            from { transform: scale(0.5); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
-        }
-        .container p {
-            font-size: 1.2em;
-            margin: 10px 0;
-            animation: fadeInText 2s ease-out;
-        }
-        @keyframes fadeInText {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .container .highlight {
-            color: #ff6b6b;
-            font-weight: bold;
-        }
-        .container .footer {
-            margin-top: 20px;
-            font-size: 1em;
-            color: #555;
-        }
-        .back-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
+        .button {
             background-color: #ff6b6b;
             color: #fff;
-            text-decoration: none;
+            padding: 15px 25px;
+            border: none;
             border-radius: 5px;
+            text-align: center;
+            font-size: 1.2em;
+            text-decoration: none;
             transition: background-color 0.3s, transform 0.3s;
-            animation: slideIn 2s ease-out;
         }
-        @keyframes slideIn {
-            from { transform: translateX(-100%); }
-            to { transform: translateX(0); }
-        }
-        .back-button:hover {
+        .button:hover {
             background-color: #ff4b4b;
             transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Selamat Ulang Tahun!</h1>
-        <p class="animated-text">🎉✨🌟</p>
-        <p>Halo <span class="highlight">Nanda</span>,</p>
-        <p>Hari ini adalah hari yang istimewa, hari dimana kamu dilahirkan untuk membawa kebahagiaan dan cinta ke dalam dunia ini. Kami ingin mengucapkan selamat ulang tahun yang penuh kebahagiaan, kesehatan, dan kesuksesan.</p>
-        <p>Semoga semua impian dan harapanmu tercapai di tahun yang baru ini. Teruslah menjadi pribadi yang menginspirasi dan membawa keceriaan bagi orang-orang di sekitarmu.</p>
-        <p>Kami bersyukur bisa merayakan hari istimewa ini bersamamu. Selamat ulang tahun sekali lagi, semoga hari-harimu selalu dipenuhi dengan tawa dan kebahagiaan.</p>
-        <p class="footer">Dengan cinta dan doa terbaik,<br>[Pengirim]</p>
-        <p>🎂🥳🎈</p>
-        <a href="index.html" class="back-button">Kembali ke Halaman Utama</a>
-    </div>
+    <a href="nandabirthday.html" class="button">Buka Ucapan Selamat Ulang Tahun</a>
 </body>
 </html>
