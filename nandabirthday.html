@@ -36,10 +36,20 @@
         .container h1 {
             font-size: 2.5em;
             color: #ff6b6b;
+            animation: scaleIn 1s ease-out;
+        }
+        @keyframes scaleIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
         }
         .container p {
             font-size: 1.2em;
             margin: 10px 0;
+            animation: fadeInText 2s ease-out;
+        }
+        @keyframes fadeInText {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         .container .highlight {
             color: #ff6b6b;
@@ -59,23 +69,40 @@
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s, transform 0.3s;
+            animation: slideIn 2s ease-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
         }
         .back-button:hover {
             background-color: #ff4b4b;
             transform: scale(1.1);
+        }
+        .cinnamoroll {
+            width: 200px;
+            margin-top: 20px;
+            animation: float 3s infinite ease-in-out;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Selamat Ulang Tahun!</h1>
-        <p>🎉✨🌟</p>
+        <p class="animated-text">🎉✨🌟</p>
         <p>Halo <span class="highlight">Nanda</span>,</p>
         <p>Hari ini adalah hari yang istimewa, hari dimana kamu dilahirkan untuk membawa kebahagiaan dan cinta ke dalam dunia ini. Kami ingin mengucapkan selamat ulang tahun yang penuh kebahagiaan, kesehatan, dan kesuksesan.</p>
         <p>Semoga semua impian dan harapanmu tercapai di tahun yang baru ini. Teruslah menjadi pribadi yang menginspirasi dan membawa keceriaan bagi orang-orang di sekitarmu.</p>
         <p>Kami bersyukur bisa merayakan hari istimewa ini bersamamu. Selamat ulang tahun sekali lagi, semoga hari-harimu selalu dipenuhi dengan tawa dan kebahagiaan.</p>
         <p class="footer">Dengan cinta dan doa terbaik,<br>[Pengirim]</p>
         <p>🎂🥳🎈</p>
+        <img src="https://link-to-cinnamoroll-image.com/cinnamoroll.jpg" alt="Cinnamoroll" class="cinnamoroll">
+        <br>
         <a href="index.html" class="back-button">Kembali ke Halaman Utama</a>
     </div>
 </body>
